@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Sayao</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+
+    <body>
+    <!-- navbar links for left and right with help from https://www.codeply.com/go/kTGlK9Axdk -->
+    <!-- <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">(icon)</a>
+        <ul class="navbar-nav">
+        </ul>
+        </nav>
+        </div> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+        <a class="navbar-brand" href="#">Carlos Miguel Sayao</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#home">Home</a>
+                <a class="nav-item nav-link" href="#aboutme">About</a>
+                <a class="nav-item nav-link" href="#projects">Projects</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+        <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <a class="nav-item nav-link" target="_blank" href="https://github.com/carsayao">
+                    <i class="fa fa-github fa-lg"></i> 
+                </a>
+                <a class="nav-item nav-link" target="_blank" href="https://gitlab.com/carsayao">
+                    <i class="fa fa-gitlab"></i>
+                </a>
+                <a class="nav-item nav-link" target="_blank" href="https://www.linkedin.com/in/carlos-miguel-sayao-562b031a4/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+        </div>
+    </nav>
+    <div class="home bg-primary text-white text-center" id="home">
+        <div class="container">
+            <h2>Carlos Miguel Sayao</h2>
+            <p>Portland, OR</p>
+            <img class="selfie" id="selfie" src="img/me.jpg">
+        </div>
+        <!-- About Me -->
+        <div class="aboutme bg-light text-dark" id="aboutme">
+            <section class="container text-center">
+                <h2 >About Me</h2>
+                <p>
+                I am a software developer with strong interests in machine learning and web development.
+                At Portland State University, I served as a grader for the web development program.
+                </p>
+            </section>
+        </div>
+        <!-- Projects -->
+        <div>
+            <h2 class="container">Projects</h2>
+            <section>
+                <div class="row d-flex col-md-12 justify-content-center">
+                    <div class="col-lg-3 col-md-4">
+                        <img class="medium" src="img/mountaincar.gif">
+                    </div>
+                    <div class="row col-lg-6 col-md-8">
+                        <h3>NEAT</h3>
+                        <!-- <h3 class="d-flex col-lg-12 justify-content-md-start">NEAT</h3> -->
+                        <p style="text-align: left;">
+                        curabitur malesuada gravida lacus eget iaculis. duis diam magna,
+                        gravida ac posuere sitamet, sollicitudin non justo.
+                        praesent pretium tristique risus. donec feugiat, tortor ac semper
+                        laoreet, enim arcu tempor nisi, eu aliquam ex nisl elementum ex.
+                        </p>
+                        <!-- <div class="d-flex col-lg justify-content-md-start justify-content-sm-start"> -->
+                        <button class="btn btn-light" id="text-primary" target="_blank" href="https://github.com/cat-cuatro/NEATProgramming">
+                            <i class="fa fa-github fa-lg"></i> GitHub
+                        </button>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+        <div>
+            <section>
+                <div class="row d-flex col-md-12 justify-content-center">
+                    <div class="col-lg-3 col-md-4 order-md-2 order-sm-1">
+                        <img class="medium" src="img/selfie.jpg">
+                    </div>
+                    <div class="row col-lg-6 col-md-8 order-md-1 order-sm-12">
+                        <h3 class="d-flex col-lg-12 justify-content-md-end justify-content-sm-start">Pi-Visualizer</h3>
+                        <p style="text-align: left;">
+                        curabitur malesuada gravida lacus eget iaculis. duis diam magna,
+                        gravida ac posuere sitamet, sollicitudin non justo.
+                        praesent pretium tristique risus. donec feugiat, tortor ac semper
+                        laoreet, enim arcu tempor nisi, eu aliquam ex nisl elementum ex.
+                        </p>
+                        <div class="d-flex col-lg justify-content-md-end justify-content-sm-start">
+                        <button class="btn btn-light" id="text-primary" target="_blank" href="https://gitlab.com/madelyea/team-visualizer">
+                            <i class="fa fa-gitlab fa-lg"></i> GitLab
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div>
+        <div class="container text-center">
+            <h2 >More Projects</h2>
+        </div>
+        <!-- Cards -->
+        <div class="project-section cards row">
+            <div class="row card-row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card border-light">
+                        <img class="card-img-top" src="img/MarioKart64.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">card-title 1</h4>
+                            <p class="card-text">vivamus felis odio, tristique posuere mollis ut, gravida et lorem. etiam a augue
+                            fermentum,
+                            auctor erat nec, porttitor magna. proin sit amet egestas purus. proin iaculis sed quam sit amet laoreet.</p>
+                            <p><a href="#" class="btn btn-secondary" target="_blank">more details &#187;</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <img class="card-img-top" src="img/homercrop.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">card-title 2</h4>
+                            <p class="card-text">curabitur malesuada gravida lacus eget iaculis. duis diam magna, gravida ac posuere sit
+                            amet, sollicitudin non justo. praesent pretium tristique risus. donec feugiat, tortor ac semper laoreet,
+                            enim
+                            arcu tempor nisi, eu aliquam ex nisl elementum ex.</p>
+                            <p><a href="#" class="btn btn-secondary" target="_blank">more details &#187;</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row card-row justify-content-center">
+                <div class="col-md-5">
+                    <div class="card">
+                        <img class="card-img-top" src="img/selfie.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">card-title 3</h4>
+                            <p class="card-text">integer posuere sed justo vel dignissim. pellentesque elementum aliquam aliquet. nullam
+                            quis consectetur libero, et cursus nunc. donec iaculis enim a velit iaculis dictum. aliquam erat volutpat.
+                            </p>
+                            <p><a href="#" class="btn btn-secondary" target="_blank">more details &#187;</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card">
+                        <img class="card-img-top" src="img/deflect.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-2">card-title 4</h4>
+                            <p class="card-text">integer posuere sed justo vel dignissim. pellentesque elementum aliquam aliquet. nullam
+                            quis consectetur libero, et cursus nunc. donec iaculis enim a velit iaculis dictum. aliquam erat volutpat.
+                            </p>
+                            <p><a href="#" class="btn btn-secondary" target="_blank">more details &#187;</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="contact bg-dark text-white" id="contact">
+        <br>
+        <a class="top col-sm-2" href="#"><i class="fa fa-arrow-up"></i> Back to Top</a>
+        <div class="row footer-container justify-content-center">
+            <div class="col-md-3">
+                <h4>Contact Me</h4>
+                <a href>email</a>
+            </div>
+            <div class="col-md-3">
+                <h4>My links</h4>
+                <p>
+                    <a target="_blank" href="https://github.com/carsayao">
+                        <i class="fa fa-github"></i> Github
+                    </a>
+                    <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/carlos-miguel-sayao-562b031a4/">
+                        <i class="fa fa-linkedin"></i> LinkedIn
+                    </a>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
