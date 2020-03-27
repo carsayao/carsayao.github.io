@@ -12,3 +12,4 @@ https://www.linkedin.com/in/carsayao/
 
 - Robochat -> Django
 
+- learn tensorflow, keras, pytorch, 
