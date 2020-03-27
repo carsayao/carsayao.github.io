@@ -38,6 +38,7 @@
                 <a class="nav-item nav-link" href="#aboutme">About</a>
                 <a class="nav-item nav-link" href="#projects">Projects</a>
                 <a class="nav-item nav-link" href="#contact">Contact</a>
+                <a class="nav-item nav-link" href="CarlosMiguelSayao-Resume.pdf" target="_blank">Resume</a>
             </div>
         </div>
         <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
@@ -56,7 +57,7 @@
         <div class="container">
             <h2>Carlos Miguel Sayao</h2>
             <p>Portland, OR</p>
-            <img class="selfie" id="selfie" src="img/me.jpg">
+            <img class="selfie" id="selfie" src="img/me.jpg" title="It's me!" alt="Image of Carlos Miguel Sayao">
         </div>
         <!-- About Me -->
         <div class="aboutme bg-light text-dark" id="aboutme">
@@ -73,20 +74,19 @@
             <h2 class="projects-head">Projects</h2>
             <section>
                 <div class="row d-flex col-md-12 justify-content-center">
-                    <div class="col-lg-3 col-md-4">
-                        <img class="medium" src="img/mountaincar.gif">
+                    <div class="col-lg-4 col-md-4">
+                        <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/mountaincar.gif" alt="NEAT attempts to drive a car up a mountain.">
                     </div>
-                    <div class="row col-lg-6 col-md-8">
-                        <h3 class="d-flex col-12 justify-content-center">NEAT</h3>
+                    <div class="row col-lg-7 col-md-8">
+                        <h3 class="d-flex col-lg-12 justify-content-center">NEAT</h3>
                         <!-- <h3 class="d-flex col-lg-12 justify-content-md-start">NEAT</h3> -->
                         <p style="text-align: left;">
-                        curabitur malesuada gravida lacus eget iaculis. duis diam magna,
-                        gravida ac posuere sitamet, sollicitudin non justo.
-                        praesent pretium tristique risus. donec feugiat, tortor ac semper
-                        laoreet, enim arcu tempor nisi, eu aliquam ex nisl elementum ex.
+                            An analysis of the genetic algorithm, NeuroEvolution of Augmenting Topologies (NEAT) developed by Ken Stanley in 2002 at UT Austin
+                            We first test the validity of NEAT components, then compare its performance to Q-Learning.
+                            The algorithms were compared based on their ability to find optimum solutions to balancing a pole and driving a car up a mountain.
                         </p>
-                        <div class="d-flex col-lg justify-content-md-center justify-content-sm-center">
-                        <button class="btn btn-light" id="text-primary" target="_blank" href="https://github.com/cat-cuatro/NEATProgramming">
+                        <div class="d-flex col-lg justify-content-md-center justify-content-sm-center my-auto">
+                        <button class="btn btn-light text-primary" onclick="window.open('https://github.com/cat-cuatro/NEATProgramming')">
                             <i class="fa fa-github fa-lg"></i> GitHub
                         </button>
                         </div>
@@ -99,19 +99,24 @@
         <div>
             <section>
                 <div class="row d-flex col-md-12 justify-content-center">
-                    <div class="col-lg-3 col-md-4 order-md-2 order-sm-1">
-                        <img class="medium" src="img/selfie.jpg">
+                    <div class="col-lg-4 col-md-4 order-md-2 order-sm-1">
+                        <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/pi-vis-demo.gif" alt="Demo of Pi-Visualizer">
                     </div>
-                    <div class="row col-lg-6 col-md-8 order-md-1 order-sm-12">
+                    <div class="row col-lg-7 col-md-8 order-md-1 order-sm-12">
                         <h3 class="d-flex col-lg-12 justify-content-md-center justify-content-sm-center">Pi-Visualizer</h3>
                         <p style="text-align: left;">
-                        curabitur malesuada gravida lacus eget iaculis. duis diam magna,
-                        gravida ac posuere sitamet, sollicitudin non justo.
-                        praesent pretium tristique risus. donec feugiat, tortor ac semper
-                        laoreet, enim arcu tempor nisi, eu aliquam ex nisl elementum ex.
+                            Pi-Vis will be part of an art installation featured at Burning Man. Written in Python, the program makes extensive use of Socket programming and command line scripting.
+                            Via ethernet connection, the program manages playlist synchronization between two Raspberry Pis, each connected to their respective individual video output.
+                            Developed to withstand harsh environments, minimize the probability for failure, and provide users with easy interface and deployment, the program is both:
                         </p>
-                        <div class="d-flex col-lg justify-content-md-center justify-content-sm-center">
-                        <button class="btn btn-light" id="text-primary" target="_blank" href="https://gitlab.com/madelyea/team-visualizer">
+                        <dl class="row pi-vis-row" style="text-align: left;">
+                            <dt class="col-sm-3">Redundant</dt>
+                            <dd class="col-sm-9">Pis can be swapped on the fly without disruption to playback, and</dd>
+                            <dt class="col-sm-3">Reliable</dt>
+                            <dd class="col-sm-9">Errors handled by the system during the approx. 12hr run time</dd>
+                        </dl>
+                        <div class="d-flex col-lg justify-content-md-center justify-content-sm-center my-auto">
+                        <button class="btn btn-light text-primary" onclick="window.open('https://gitlab.com/madelyea/team-visualizer')">
                             <i class="fa fa-gitlab fa-lg"></i> GitLab
                         </button>
                         </div>
@@ -187,15 +192,21 @@
 
     <footer class="contact bg-dark text-white" id="contact">
         <br>
-        <a class="top col-sm-2" href="#"><i class="fa fa-arrow-up"></i> Back to Top</a>
-        <div class="row footer-container justify-content-center">
-            <div class="col-md-3">
+        <a class="top col-md-2" href="#"><i class="fa fa-arrow-up"></i> Back to Top</a>
+        <div class="row container justify-content-center">
+        <!-- justify-content-sm-end"> -->
+        <!-- <div class="row d-flex footer-container justify-content-sm-center"> -->
+            <div class="footer-head col-lg-3 col-md-3 mb-5 ml-auto">
+            <!-- <div class="col-md-6 col-sm-12"> -->
                 <h4>Contact Me</h4>
-                <a href>email</a>
+                <p class="links">
+                    <a href>email</a>
+                </p>
             </div>
-            <div class="col-md-3">
+            <div class="footer-head col-lg-4 col-md-3 mb-5">
+            <!-- <div class="col-md-6 col-sm-12"> -->
                 <h4>My links</h4>
-                <p>
+                <p class="links">
                     <a target="_blank" href="https://github.com/carsayao">
                         <i class="fa fa-github"></i> Github
                     </a>
@@ -203,7 +214,6 @@
                     <a target="_blank" href="https://www.linkedin.com/in/carlos-miguel-sayao-562b031a4/">
                         <i class="fa fa-linkedin"></i> LinkedIn
                     </a>
-                    <br>
                 </p>
             </div>
         </div>
