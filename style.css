@@ -19,10 +19,19 @@
     padding: 5%;
 }
 
+.projects-head {
+    padding: 5%;
+    padding-bottom: 5rem;
+}
+
 #selfie {
     width: 15rem;
     vertical-align: middle;
     border-radius: 50%;
+}
+
+p {
+    padding: 2%;
 }
 
 section {
@@ -44,7 +53,7 @@ img.align-right {
     margin-left: 10px;
 }
 img.medium {
-    width: 15rem;
+    width: 14rem;
     border-radius: 10px;
     /* filter: drop-shadow(0 0 0.75rem #330066); */
     /* filter: drop-shadow(1px 1px 0.5rem #000000); */
