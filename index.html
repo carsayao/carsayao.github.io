@@ -26,7 +26,7 @@
         </nav>
         </div> -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
         <a class="navbar-brand" href="#">Carlos Miguel Sayao</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,10 +46,10 @@
                     <i class="fa fa-github fa-lg"></i> 
                 </a>
                 <a class="nav-item nav-link" target="_blank" href="https://gitlab.com/carsayao">
-                    <i class="fa fa-gitlab"></i>
+                    <i class="fa fa-gitlab fa-lg"></i>
                 </a>
-                <a class="nav-item nav-link" target="_blank" href="https://www.linkedin.com/in/carlos-miguel-sayao-562b031a4/">
-                    <i class="fa fa-linkedin"></i>
+                <a class="nav-item nav-link" target="_blank" href="https://www.linkedin.com/in/carsayao/">
+                    <i class="fa fa-linkedin fa-lg"></i>
                 </a>
         </div>
     </nav>
@@ -73,7 +73,7 @@
         <div>
             <h2 class="projects-head">Projects</h2>
             <section>
-                <div class="row d-flex col-md-12 justify-content-center">
+                <div class="row col-md-12 justify-content-center">
                     <div class="col-lg-4 col-md-4">
                         <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/mountaincar.gif" alt="NEAT attempts to drive a car up a mountain.">
                     </div>
@@ -101,7 +101,9 @@
                 <div class="row d-flex col-md-12 justify-content-center">
                     <div class="col-lg-4 col-md-4 order-md-2 order-sm-1">
                         <!-- <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/pi-vis-demo.gif" alt="Demo of Pi-Visualizer"> -->
-                        <div style='position:relative; padding-bottom:calc(56.33% + 44px)'><iframe src='https://gfycat.com/ifr/HollowSkeletalGrackle' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+                        <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/pi-vis-still.jpg" alt="Demo of Pi-Visualizer">
+                        <!-- <div style='position:relative; padding-bottom:calc(56.33% + 44px)'><iframe src='https://gfycat.com/ifr/HollowSkeletalGrackle' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div> -->
+
                     </div>
                     <div class="row col-lg-7 col-md-8 order-md-1 order-sm-12">
                         <h3 class="d-flex col-lg-12 justify-content-md-center justify-content-sm-center">Pi-Visualizer</h3>
@@ -117,9 +119,30 @@
                             <dd class="col-sm-9">Errors handled by the system during the approx. 12hr run time</dd>
                         </dl>
                         <div class="d-flex col-lg justify-content-md-center justify-content-sm-center my-auto">
-                        <button class="btn btn-light text-primary" onclick="window.open('https://gitlab.com/madelyea/team-visualizer')">
-                            <i class="fa fa-gitlab fa-lg"></i> GitLab
-                        </button>
+                            <button class="btn btns btn-light text-primary" onclick="window.open('https://gitlab.com/madelyea/team-visualizer')">
+                                <i class="fa fa-gitlab fa-lg"></i> GitLab
+                            </button>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btns btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                See demo
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalLongTitle">Pi-vis demo</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div style="position:relative; padding-bottom:calc(56.33% + 44px)"><iframe src='https://gfycat.com/ifr/HollowSkeletalGrackle' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -140,11 +163,14 @@
                     <div class="card border-light">
                         <img class="card-img-top" src="img/MarioKart64.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h4 class="card-title mb-2">card-title 1</h4>
-                            <p class="card-text">vivamus felis odio, tristique posuere mollis ut, gravida et lorem. etiam a augue
-                            fermentum,
-                            auctor erat nec, porttitor magna. proin sit amet egestas purus. proin iaculis sed quam sit amet laoreet.</p>
-                            <p><a href="#" class="btn btn-secondary" target="_blank">more details &#187;</a></p>
+                            <h5 class="card-title mb-2">Lonr</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Full-stack web app</h6>
+                            <!-- <h4 class="card-title mb-2">Lonr</h4> -->
+                            <p class="card-text">
+                                Web-chat app generates Markov models from corpora to simulate conversation with notable comedians.
+                                Uses Express and SocketIO to establish two-way communication between client and server.
+                                NLTK processes user messages which are fed as input to a modified Python library, Markovify, to generate a comedian's message.
+                            <p><a href="https://github.com/carsayao/robochat/" class="btn btn-primary" target="_blank">Github <i class="fa fa-external-link fa-xs"></i></a></p>
                         </div>
                     </div>
                 </div>
@@ -194,17 +220,19 @@
     <footer class="contact bg-dark text-white" id="contact">
         <br>
         <a class="top col-md-2" href="#"><i class="fa fa-arrow-up"></i> Back to Top</a>
-        <div class="row container justify-content-center">
+        <div class="row footer-container justify-content-center">
         <!-- justify-content-sm-end"> -->
         <!-- <div class="row d-flex footer-container justify-content-sm-center"> -->
-            <div class="footer-head col-lg-3 col-md-3 mb-5 ml-auto">
+            <div class="footer-head col-lg-4 col-md-3 mb-md-5 ml-auto">
+            <!-- <div class="footer-head col-lg-3 col-md-3 mb-5 ml-auto"> -->
             <!-- <div class="col-md-6 col-sm-12"> -->
-                <h4>Contact Me</h4>
+                <h4>Contact</h4>
                 <p class="links">
                     <a href>email</a>
                 </p>
             </div>
-            <div class="footer-head col-lg-4 col-md-3 mb-5">
+            <div class="footer-head col-lg-5 col-md-3 mb-5">
+            <!-- <div class="footer-head col-lg-4 col-md-3 mb-5"> -->
             <!-- <div class="col-md-6 col-sm-12"> -->
                 <h4>My links</h4>
                 <p class="links">
