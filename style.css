@@ -141,3 +141,8 @@ footer a {
 footer p a {
     margin-left: 1rem;
 }
+
+h2 {
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+}
