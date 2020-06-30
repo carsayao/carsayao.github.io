@@ -1,1 +1,380 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/carsayao.github.io/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/carsayao.github.io/logo192.png"/><link rel="manifest" href="/carsayao.github.io/manifest.json"/><title>React App</title><link href="/carsayao.github.io/static/css/main.5f361e03.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,a,i=r[0],l=r[1],f=r[2],c=0,s=[];c<i.length;c++)a=i[c],Object.prototype.hasOwnProperty.call(o,a)&&o[a]&&s.push(o[a][0]),o[a]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n)&&(e[n]=l[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var l=t[i];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=a(a.s=t[0]))}return e}var n={},o={1:0},u=[];function a(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,a),t.l=!0,t.exports}a.m=e,a.c=n,a.d=function(e,r,t){a.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},a.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},a.t=function(e,r){if(1&r&&(e=a(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(a.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)a.d(t,n,function(r){return e[r]}.bind(null,n));return t},a.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return a.d(r,"a",r),r},a.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},a.p="/carsayao.github.io/";var i=this["webpackJsonpreact-portfolio"]=this["webpackJsonpreact-portfolio"]||[],l=i.push.bind(i);i.push=r,i=i.slice();for(var f=0;f<i.length;f++)r(i[f]);var p=l;t()}([])</script><script src="/carsayao.github.io/static/js/2.0feb8754.chunk.js"></script><script src="/carsayao.github.io/static/js/main.f52ec61d.chunk.js"></script></body></html>
+<!--
+         ___ ___   ___   ____     ___         __   ___   __    __  ____     ___  _      _     
+        |   |   | /   \ |    \   /  _]       /  ] /   \ |  |__|  ||    \   /  _]| |    | |    
+        | _   _ ||     ||  D  ) /  [_       /  / |     ||  |  |  ||  o  ) /  [_ | |    | |    
+        |  \_/  ||  O  ||    / |    _]     /  /  |  O  ||  |  |  ||     ||    _]| |___ | |___ 
+        |   |   ||     ||    \ |   [_     /   \_ |     ||  `  '  ||  O  ||   [_ |     ||     |
+        |   |   ||     ||  .  \|     |    \     ||     | \      / |     ||     ||     ||     |
+        |___|___| \___/ |__|\_||_____|     \____| \___/   \_/\_/  |_____||_____||_____||_____|
+                                                                                      
+                                                                                                                                      
+                                                                                      ░░░░▒▒▒▒▒▒                                      
+                                                                      ░░░░▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓██████▓▓                                    
+                                                    ░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓████▓▓▓▓████▓▓▓▓████████▓▓                                    
+                                              ░░▓▓████████████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒░░▒▒████                                    
+                                              ▓▓██████▓▓▓▓████████▓▓▓▓▓▓▒▒▒▒░░              ▒▒████                                    
+                                            ░░████▓▓▒▒▒▒░░░░░░                              ░░██▓▓                                    
+                                            ░░████                                          ░░▓▓██                                    
+                                            ░░████                                          ▒▒▓▓▓▓                                    
+                                            ░░████                              ░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓                                    
+                                              ████                ░░░░▒▒▒▒▒▒▓▓▓▓████████▓▓▓▓▓▓▓▓▓▓                                    
+                                            ░░████░░░░░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒                                      
+                                            ░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▒▒▒▒▒▒░░                                    
+                                        ░░░░░░▓▓▓▓▓▓▓▓▒▒▓▓▓▓▒▒▒▒░░░░░░░░░░▒▒▒▒▓▓▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▒▒                                  
+                                      ░░░░░░░░▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░                              
+                                    ░░░░░░░░░░░░▒▒▒▒▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░      ░░░░                            
+                                  ░░░░░░░░░░░░░░▒▒▓▓▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒                            
+                                  ░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒░░░░                          
+                                ░░░░░░░░░░░░░░░░░░▒▒░░  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒                          
+                                ░░░░░░░░░░░░░░░░▒▒▒▒░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                          
+                              ░░░░░░░░░░░░░░░░░░▒▒▒▒░░▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░                        
+                              ░░░░░░░░░░░░░░░░░░▒▒░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░                        
+                              ░░░░░░░░░░░░░░░░░░▒▒░░░░▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                        
+                            ░░░░░░░░░░░░░░░░░░░░▒▒░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                        
+                            ░░░░░░░░░░░░░░░░░░░░▒▒░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░                      
+                            ░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                      
+                          ░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                      
+                          ░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                      
+                          ░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓░░                    
+                        ░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒                    
+                        ░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                    
+                        ░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓░░                  
+                      ░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒░░                  
+                      ░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                  
+                      ░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                  
+                    ░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓░░                
+                    ░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒                
+                  ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒                
+                  ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                
+                  ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░              
+                  ░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒              
+                ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒              
+                ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓              
+                ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░            
+              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒            
+              ░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓            
+              ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░          
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░          
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒          
+            ░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒          
+          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░        
+          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒        
+          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒        
+          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓        
+        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░      
+        ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒      
+      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒      
+      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░    
+      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▒▒▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░    
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒    
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒    
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  
+  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░  
+    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒  
+      ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒░░
+          ░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒
+            ░░░░░░░░░░░░░░░░░░░░░░▒▒▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▒▒▒▒▒▒▓▓▒▒░░░░▒▒▒▒░░░░░░░░
+              ░░░░░░░░░░░░░░░░░░░░▒▒▓▓▓▓▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▒▒▒▒▒▒░░░░░░░░░░    
+                ░░░░░░░░░░░░░░░░░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒░░░░░░░░░░░░              
+                    ░░░░░░░░░░░░░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░░░░░░░░░░░░░░░                            
+                      ░░░░░░░░░░░░▒▒▒▒▒▒▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒░░░░░░░░░░░░░░                                        
+                        ░░░░░░░░░░▒▒▒▒░░▒▒▓▓▓▓▓▓▓▓▓▓▓▓██▓▓▓▓▓▓▓▓▒▒▒▒░░░░░░░░░░░░░░                                                    
+                            ░░░░░░▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▒▒░░░░░░░░░░░░░░                                                                
+                              ░░░░░░░░░░░░░░▒▒░░░░░░░░░░░░                                                                            
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Sayao</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css" />
+
+    </head>
+
+    <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+        <a class="navbar-brand" href="#">Carlos Miguel Sayao</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#home">Home</a>
+                <a class="nav-item nav-link" href="#aboutme">About</a>
+                <a class="nav-item nav-link" href="#projects">Projects</a>
+                <a class="nav-item nav-link" href="#contact">Contact</a>
+                <a class="nav-item nav-link" href="CarlosMiguelSayao-Resume.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+        <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <a class="nav-item nav-link" target="_blank" title="My GitHub" href="https://github.com/carsayao">
+                    <i class="fa fa-github"></i> 
+                </a>
+                <a class="nav-item nav-link" target="_blank" title="My GitLab" href="https://gitlab.com/carsayao">
+                    <i class="fa fa-gitlab"></i>
+                </a>
+                <a class="nav-item nav-link" target="_blank" title="My LinkedIn" href="https://www.linkedin.com/in/carsayao/">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="nav-item nav-link" title="My Email" href="mailto:carlossayao@gmail.com">
+                    <i class="fa fa-envelope-square"></i>
+                </a>
+        </div>
+    </nav>
+    <div class="home bg-primary text-white text-center" id="home">
+        <div class="container">
+            <h2>Carlos Miguel Sayao</h2>
+            <p>Portland, OR</p>
+            <img class="selfie" id="selfie" src="img/me.jpg" title="It's me!" alt="Image of Carlos Miguel Sayao">
+        </div>
+        <!-- About Me -->
+        <div class="aboutme bg-light text-dark" id="aboutme">
+            <section class="container text-center">
+                <h2 >About Me</h2>
+                <p>
+                I am a software developer with strong interests in machine learning and web development.
+                At Portland State University, I served as a grader for the web development program.
+                </p>
+            </section>
+        </div>
+        <!-- Projects -->
+        <div id="projects">
+            <h2 class="projects-head">Projects</h2>
+            <section>
+                <div class="row col-md-12 justify-content-center">
+                    <div class="col-lg-4 col-md-4">
+                        <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/mountaincar.gif" alt="NEAT attempts to drive a car up a mountain.">
+                    </div>
+                    <div class="row col-lg-7 col-md-8">
+                        <h3 class="d-flex col-lg-12 justify-content-center">NEAT</h3>
+                        <!-- <h3 class="d-flex col-lg-12 justify-content-md-start">NEAT</h3> -->
+                        <p style="text-align: left;">
+                            An analysis of the genetic algorithm, NeuroEvolution of Augmenting Topologies (NEAT) developed by Ken Stanley in 2002 at UT Austin.
+                            We first test the validity of NEAT components, then compare its performance to Q-Learning.
+                            The algorithms were compared based on their ability to find optimum solutions to balancing a pole and driving a car up a mountain.
+                        </p>
+                        <div class="d-flex col-lg justify-content-md-center justify-content-sm-center my-auto">
+                        <button class="btn btn-light text-primary" onclick="window.open('https://github.com/cat-cuatro/NEATProgramming')">
+                            <i class="fa fa-github"></i> GitHub
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+        <div>
+            <section>
+                <div class="row d-flex col-md-12 justify-content-center">
+                    <div class="col-lg-4 col-md-4 order-md-2 order-sm-1">
+                        <!-- <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/pi-vis-demo.gif" alt="Demo of Pi-Visualizer"> -->
+                        <img class="rounded img-fluid mt-lg-1 mt-md-5 my-sm-3" src="img/pi-vis-still.jpg" alt="Demo of Pi-Visualizer">
+                        <!-- <div style='position:relative; padding-bottom:calc(56.33% + 44px)'><iframe src='https://gfycat.com/ifr/HollowSkeletalGrackle' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div> -->
+
+                    </div>
+                    <div class="row col-lg-7 col-md-8 order-md-1 order-sm-12">
+                        <h3 class="d-flex col-lg-12 justify-content-md-center justify-content-sm-center">Pi-Visualizer</h3>
+                        <p style="text-align: left;">
+                            Pi-Vis will be part of an art installation featured at Burning Man. Written in Python, the program makes extensive use of Socket programming and command line scripting.
+                            Via ethernet connection, the program manages playlist synchronization between two Raspberry Pis, each connected to their respective individual video output.
+                            Developed to withstand harsh environments, minimize the probability for failure, and provide users with easy interface and deployment, the program is both:
+                        </p>
+                        <dl class="row pi-vis-row" style="text-align: left;">
+                            <dt class="col-sm-3">Redundant</dt>
+                            <dd class="col-sm-9">Pis can be swapped on the fly without disruption to playback, and</dd>
+                            <dt class="col-sm-3">Reliable</dt>
+                            <dd class="col-sm-9">Errors handled by the system during the approx. 12hr run time</dd>
+                        </dl>
+                        <div class="d-flex col-lg justify-content-md-center justify-content-sm-center my-auto">
+                            <button class="btn btns btn-light text-primary" onclick="window.open('https://gitlab.com/madelyea/team-visualizer')">
+                                <i class="fa fa-gitlab"></i> GitLab
+                            </button>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btns btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                                See demo
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-dark" id="exampleModalLongTitle">Pi-vis demo</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div style="position:relative; padding-bottom:calc(56.33% + 44px)"><iframe src='https://gfycat.com/ifr/HollowSkeletalGrackle' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div>
+        <div class="container text-center">
+            <h2 >More Projects</h2>
+        </div>
+        <!-- Cards -->
+        <div class="project-section cards row">
+            <div class="row card-row justify-content-center">
+                <div class="col-lg-5 col-md-12">
+                    <div class="card border-light">
+                        <img class="card-img-top" src="img/lonr.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Lonr</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Full-stack web app</h6>
+                            <!-- <h4 class="card-title mb-2">Lonr</h4> -->
+                            <p class="card-text">
+                                Web-chat app generates Markov models from corpora to simulate conversation with notable comedians.
+                                Uses Express and SocketIO to establish two-way communication between client and server.
+                                NLTK processes user messages which are fed as input to a modified Python library, Markovify, to generate a comedian's message.
+                            <p><button class="btn btn-primary" onclick="window.open('https://github.com/carsayao/lonr')">
+                                <i class="fa fa-github"></i> GitHub
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/Classtoage.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Titanic Learning</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">ML Comparison</h6>
+                            <p class="card-text">
+                                Inspired by the <a href="https://www.kaggle.com/c/titanic" target="_blank">Kaggle</a> competition, we used several machine learning techniques to predict who lives and who dies on the Titanic.
+                                We used sklearn to compare the following ML techniques: Support Vector, Naive Bayes, Multi-Layer Perceptron, Perceptron Learning, and Decision Tree.
+                                We found the most important factors in survival were the passenger's class and title (ie. Mr., Miss., Mrs.).
+                                From the title, more important factors could be surmised. These were age and gender.
+                            </p>
+                            <p><button class="btn btn-primary" onclick="window.open('https://github.com/carsayao/titanic-learning')">
+                                <i class="fa fa-github"></i> GitHub
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <section>
+                    <hr>
+                    <div class="row d-flex col-md-12 justify-content-center">
+                        <div class="col-lg-4 col-md-4 order-md-2 order-sm-1">
+                            <img class="card-img-top" src="img/updownseventwo.png" alt="Card image cap">
+                            <img class="card-img-top" src="img/similarity-matrix.png" alt="Card image cap">
+
+                        </div>
+                        <div class="row col-lg-7 col-md-8 order-md-1 order-sm-12">
+                            <h3 class="d-flex col-lg-12 justify-content-md-center justify-content-sm-center">Audio Visualization</h3>
+                            <p>
+                                Inspired by the speech recognition <a href="https://www.kaggle.com/c/tensorflow-speech-recognition-challenge" target="_blank">Kaggle</a> competition, our goals were to:
+                                <dl class="row pi-vis-row" style="text-align: left;">
+                                    <dt class="col-sm-3">Goals</dt>
+                                    <dd class="col-sm-9">
+                                        <ul>
+                                            <li>
+                                                Implement different ways to visualize spoken word audio data
+                                                <ul><li>Identify trends and characteristics based on those visualizations.</li></ul>
+                                            </li>
+                                            <li>
+                                                Visualize these aggregated features to see how words may be more or less related
+                                                <ul><li>Visualize these aggregated features to see how words may be more or less related</li></ul>
+                                            </li>
+                                        </ul>
+                                    </dd>
+                                    <dt class="col-sm-3">Tools</dt>
+                                    <dd class="col-sm-9">
+                                        SciPy, Matplotlib, Seaborn, and PyAudioAnalysis. 
+                                    </dd>
+                                </dl>
+                            </p>
+                            <div class="d-flex col-lg justify-content-md-center justify-content-sm-center my-auto">
+                                <button class="btn btns btn-primary" onclick="window.open('https://github.com/carsayao/speech-recognition')">
+                                    <i class="fa fa-github"></i> GitHub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+                <div class="col-lg-5 col-md-12">
+                    <div class="card">
+                        <img class="card-img-top" src="img/updownseventwo.png" alt="Card image cap">
+                        <img class="card-img-top" src="img/similarity-matrix.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Audio visualizaion</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Data Visualization</h6>
+                            <p class="card-text">
+                                Inspired by the speech recognition <a href="https://www.kaggle.com/c/tensorflow-speech-recognition-challenge" target="_blank">Kaggle</a> competition, our goals were to:
+                                <ul>
+                                    <li>
+                                        Implement different ways to visualize spoken word audio data
+                                        <ul><li>Identify trends and characteristics based on those visualizations.</li></ul>
+                                    </li>
+                                    <li>
+                                        Implement methods to aggregate features of the data
+                                        <ul><li>Visualize these aggregated features to see how words may be more or less related</li></ul>
+                                    </li>
+                                </ul>
+                                We used SciPy, Matplotlib, Seaborn, and PyAudioAnalysis. 
+                            </p>
+                            <p><button class="btn btn-primary" onclick="window.open('https://github.com/carsayao/speech-recognition')">
+                                <i class="fa fa-github"></i> GitHub
+                            </button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="contact bg-dark text-white" id="contact">
+        <br>
+        <a class="top col-md-2" href="#"><i class="fa fa-arrow-up"></i> Back to Top</a>
+        <div class="row pt-4 m-auto">
+            <div class="footer-head col-lg-4 col-md-4 mb-md-5 ml-auto col-sm-5">
+                <h4>Contact</h4>
+                <p class="links">
+                    <a href="mailto:carlossayao@gmail.com">
+                        <i class="fa fa-envelope-square"></i> carlossayao@gmail.com</a>
+                </p>
+            </div>
+            <div class="footer-head col-lg-5 col-md-5 mb-5 col-sm-5">
+                <h4>My links</h4>
+                <p class="links">
+                    <a target="_blank" title="My GitHub" href="https://github.com/carsayao">
+                        <i class="fa fa-github"></i> Github
+                    </a>
+                    <br>
+                    <a target="_blank" title="My GitLab" href="https://gitlab.com/carsayao">
+                        <i class="fa fa-gitlab"></i> GitLab
+                    </a>
+                    <br>
+                    <a target="_blank" title="My LinkedIn" href="https://www.linkedin.com/in/carlos-miguel-sayao-562b031a4/">
+                        <i class="fa fa-linkedin"></i> LinkedIn
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
