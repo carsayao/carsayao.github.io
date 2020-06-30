@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/carsayao.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/carsayao.github.io/static/js/main.f52ec61d.chunk.js",
+    "main.js.map": "/carsayao.github.io/static/js/main.f52ec61d.chunk.js.map",
+    "runtime-main.js": "/carsayao.github.io/static/js/runtime-main.64cb24c7.js",
+    "runtime-main.js.map": "/carsayao.github.io/static/js/runtime-main.64cb24c7.js.map",
+    "static/js/2.0feb8754.chunk.js": "/carsayao.github.io/static/js/2.0feb8754.chunk.js",
+    "static/js/2.0feb8754.chunk.js.map": "/carsayao.github.io/static/js/2.0feb8754.chunk.js.map",
+    "index.html": "/carsayao.github.io/index.html",
+    "precache-manifest.18ad77e8a3c89edd25f8030d709112e4.js": "/carsayao.github.io/precache-manifest.18ad77e8a3c89edd25f8030d709112e4.js",
+    "service-worker.js": "/carsayao.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/carsayao.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0feb8754.chunk.js.LICENSE.txt": "/carsayao.github.io/static/js/2.0feb8754.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/carsayao.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.64cb24c7.js",
+    "static/js/2.0feb8754.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.f52ec61d.chunk.js"
+  ]
+}
